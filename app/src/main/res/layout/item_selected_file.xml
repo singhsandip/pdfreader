@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#404040"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:ellipsize="end"
+       android:paddingRight="60dp"
+        android:hint="sandeep.pdf" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imgv_close"
+        android:src="@drawable/close"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:layout_marginRight="15dp"
+        app:tint="#ff665d" />
+
+</FrameLayout>

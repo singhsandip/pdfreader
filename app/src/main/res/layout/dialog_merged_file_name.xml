@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_file_name"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter output file name"
+                android:layout_marginTop="40dp"
+                android:layout_margin="20dp"
+                android:textColor="#404153"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_gravity="bottom"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_file_name"
+                android:hint="Enter name here!"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginRight="20dp"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Okay!"
+                   android:id="@+id/tv_okay"
+                   android:textColor="@color/colorPrimary"
+                   android:textStyle="bold"
+                   android:textSize="16sp"
+                   android:padding="20dp"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Cancel"
+                   android:id="@+id/tv_cancel"
+                   android:textColor="#404153"
+                   android:textSize="16sp"
+                   android:padding="20dp"/>
+
+           </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</layout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pdf"
+                    android:layout_marginLeft="40dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pdf"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pdf" />
+                
+                
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow"
+                    android:layout_gravity="center"
+                    app:tint="@color/colorPrimary" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pdf"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="40dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select source file"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/plus_icon"
+                    android:layout_gravity="right|center_vertical"
+                    android:padding="12dp"
+                    android:id="@+id/imgv_select_source"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_source"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#d7edfa"
+                android:textColor="#404040"
+                android:textSize="14sp"
+                tools:text="sandeep.pdf"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/fl_merge_with"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Files to merge with"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/plus_icon"
+                    android:layout_gravity="right|center_vertical"
+                    android:padding="12dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/imgv_merge_source"/>
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_files"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/btn_merge"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Merge"
+            android:textColor="#fff"
+            android:visibility="gone"
+            android:enabled="false"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_selector_button"
+            android:layout_marginBottom="20dp"/>
+
+    </FrameLayout>
+
+</layout>
